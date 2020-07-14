@@ -3,8 +3,7 @@
 
 Palpite Box é uma aplicação feita com NextJS na semana Fullstack Master da DevPleno
 
-<img width="120" src="public/phone1.png" />
-<img width="120" src="public/phone2.png" />
+<img width="120" src="public/phone1.png" /><img width="120" src="public/phone2.png" />
 
 ## Getting Started
 
