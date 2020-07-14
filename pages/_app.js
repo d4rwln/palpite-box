@@ -8,13 +8,15 @@ import Head from 'next/head';
 const MyApp = ({ Component, pageProps }) => {
     return (
 
-        <div >
+        <div>
             <Head><title>PalpiteBox</title></Head>
 
             <Header/>
             <div className='container mx-auto'>
                 <Component {...pageProps} />
             </div>
+            <br/>
+            <br/>
             <Footer/>
         </div>
     )

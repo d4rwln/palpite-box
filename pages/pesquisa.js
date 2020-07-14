@@ -30,12 +30,12 @@ const Pesquisa = () => {
     }
 
     return (
-        <div className='pt-6'>
+        <div className='px-5  pt-6'>
             <h1 className='text-center font-bold my-4 text-2xl'>Críticas e Sugestões</h1>
             <p className='text-center'>O restaurante x sempre busca por atender melhor seus clientes.<br />
             Por isso, estamos sempre abertos a ouvir a sua opinião.
             </p>
-            {!sucess && <div className='w-1/4 mx-auto '>
+            {!sucess && <div className=' mx-auto '>
                 <input value={Nome} onChange={(e) => { setNome(e.target.value) }} placeholder='Nome' type='text' className='shadow p-4 block bg-blue-200 my-2 w-full' />
                 <input value={Email} onChange={(e) => { setEmail(e.target.value) }} placeholder='E-mail' type='text' className='shadow p-4 block bg-blue-200 my-2 w-full' />
                 <input value={Whats} onChange={(e) => { setWhats(e.target.value) }} placeholder='Whatsapp' type='text' className='shadow p-4 block bg-blue-200 my-2 w-full' />
@@ -43,7 +43,7 @@ const Pesquisa = () => {
                 <div className='flex py-2'>
                     {notas.map(nota => {
                         return (
-                            <div className='px-2'>
+                            <div value={nota} className='px-2'>
                                 <label>{nota}</label>
                                 <input onChange={e =>{setNota(e.target.value)}} type='radio' name='nota' value={nota} />
                             </div>
